@@ -1,5 +1,7 @@
 package com.tabletop.companionapp
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
@@ -23,20 +25,36 @@ class TaskAdapter(val listTask: MutableList<Task>, val playerIndex: Int): Recycl
         with(holder) {
             binding.imgPesanan.setImageResource(task.image)
             binding.buttonClaim.setOnClickListener {
-                addScore(task, playerIndex)
-                GlobalData.players[playerIndex].taskCompleted += 1
-                (itemView.context as PlayerActionActivity).showScore(playerIndex)
-                Toast.makeText(itemView.context, "${task.name} claimed", Toast.LENGTH_SHORT).show()
-                val tmpTask = GlobalData.allTasks[Random.nextInt(0,GlobalData.allTasks.size)]
-                GlobalData.players[playerIndex].tasks[position] = tmpTask
-                (itemView.context as PlayerActionActivity).showRecyclerView(playerIndex)
-                if (GlobalData.players[playerIndex].taskCompleted >= 8) {
-                    Toast.makeText(
-                        itemView.context,
-                        "${GlobalData.players[playerIndex].name} has completed 8 tasks",
-                        Toast.LENGTH_SHORT
-                    ).show()
-                    itemView.context.startActivity(Intent(itemView.context, FinalScoreActivity::class.java))
+                AlertDialog.Builder(itemView.context).apply {
+                    setTitle("KONFIRMASI")
+                    setMessage("Apakah resources Anda cukup untuk pesanan ${task.name}?")
+                    setPositiveButton("Ya", DialogInterface.OnClickListener{_,_ ->
+                        AlertDialog.Builder(itemView.context).apply {
+                            setTitle("Klaim Pesanan Berhasil!")
+                            setMessage("Anda mendapatkan \n" +
+                                    "${task.point} poin \n" +
+                                    "${task.money} rupiah")
+                            setPositiveButton("OK", null)
+                            create().show()
+                        }
+                        addScore(task, playerIndex)
+                        GlobalData.players[playerIndex].taskCompleted += 1
+                        (itemView.context as PlayerActionActivity).showScore(playerIndex)
+                        Toast.makeText(itemView.context, "${task.name} claimed", Toast.LENGTH_SHORT).show()
+                        val tmpTask = GlobalData.allTasks[Random.nextInt(0,GlobalData.allTasks.size)]
+                        GlobalData.players[playerIndex].tasks[position] = tmpTask
+                        (itemView.context as PlayerActionActivity).showRecyclerView(playerIndex)
+                        if (GlobalData.players[playerIndex].taskCompleted >= 8) {
+                            Toast.makeText(
+                                itemView.context,
+                                "${GlobalData.players[playerIndex].name} has completed 8 tasks",
+                                Toast.LENGTH_SHORT
+                            ).show()
+                            itemView.context.startActivity(Intent(itemView.context, FinalScoreActivity::class.java))
+                        }
+                    })
+                    setNegativeButton("Tidak", null)
+                    create().show()
                 }
             }
             binding.buttonTrash.setOnClickListener {
