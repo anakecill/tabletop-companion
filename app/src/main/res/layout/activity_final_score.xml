@@ -57,8 +57,8 @@
             android:layout_width="150dp"
             android:layout_height="200dp"
             android:layout_marginStart="38dp"
-            android:layout_marginTop="16dp"
-            app:cardBackgroundColor="#FFBEBE"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor=" #CDDA48"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13">
 
@@ -73,9 +73,10 @@
             android:id="@+id/cardCharPlayer2Final"
             android:layout_width="150dp"
             android:layout_height="200dp"
-            app:cardBackgroundColor="#FFBEBE"
-            app:layout_constraintTop_toTopOf="@+id/cardCharPlayer1Final"
-            tools:layout_editor_absoluteX="223dp">
+            android:layout_marginEnd="38dp"
+            app:cardBackgroundColor="#60BBBF"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/cardCharPlayer1Final">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -88,10 +89,10 @@
             android:id="@+id/cardCharPlayer3Final"
             android:layout_width="150dp"
             android:layout_height="200dp"
-            android:layout_marginTop="16dp"
-            app:cardBackgroundColor="#FFBEBE"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#F46A40"
             app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1Final"
-            app:layout_constraintTop_toBottomOf="@+id/redCardPointPlayer1">
+            app:layout_constraintTop_toBottomOf="@+id/textView9">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -104,10 +105,9 @@
             android:id="@+id/cardCharPlayer4Final"
             android:layout_width="150dp"
             android:layout_height="200dp"
-            android:layout_marginTop="24dp"
-            app:cardBackgroundColor="#FFBEBE"
+            app:cardBackgroundColor="#F49E40"
             app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer2Final"
-            app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer2Final">
+            app:layout_constraintTop_toTopOf="@+id/cardCharPlayer3Final">
 
             <androidx.constraintlayout.widget.ConstraintLayout
                 android:layout_width="match_parent"
@@ -141,7 +141,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="20dp"
-            app:cardBackgroundColor="#FFBEBE"
+            app:cardBackgroundColor="#F46A40"
             app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1Final"
             app:layout_constraintTop_toBottomOf="@+id/textView15">
 
@@ -166,7 +166,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            app:cardBackgroundColor="#FFBEBE"
+            app:cardBackgroundColor="#F0CA60"
             app:layout_constraintStart_toEndOf="@+id/redCardPointPlayer1"
             app:layout_constraintTop_toTopOf="@+id/redCardPointPlayer1">
 
@@ -191,7 +191,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            app:cardBackgroundColor="#FFBEBE"
+            app:cardBackgroundColor="#60BBBF"
             app:layout_constraintStart_toEndOf="@+id/YellowCardPointPlayer1"
             app:layout_constraintTop_toTopOf="@+id/YellowCardPointPlayer1">
 
@@ -210,6 +210,592 @@
                     app:layout_constraintTop_toTopOf="parent" />
             </androidx.constraintlayout.widget.ConstraintLayout>
         </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/OrangeCardPointPlayer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#F49E40"
+            app:layout_constraintStart_toStartOf="@+id/redCardPointPlayer1"
+            app:layout_constraintTop_toBottomOf="@+id/redCardPointPlayer1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textGreenCardPointPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PinkCardPointPlayer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F29575"
+            app:layout_constraintStart_toEndOf="@+id/OrangeCardPointPlayer1"
+            app:layout_constraintTop_toTopOf="@+id/OrangeCardPointPlayer1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOrangeCardPointPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/GreenCardPointPlayer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor=" #CDDA48"
+            app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer1"
+            app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOrangeCardPointPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView9"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Player 3"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer3Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer3Final"
+            app:layout_constraintTop_toBottomOf="@+id/PinkCardPointPlayer1" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/redCardPointPlayer2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="#F46A40"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer2Final"
+            app:layout_constraintTop_toBottomOf="@+id/textView12">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textRedCardPointPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/YellowCardPointPlayer2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F0CA60"
+            app:layout_constraintStart_toEndOf="@+id/redCardPointPlayer2"
+            app:layout_constraintTop_toTopOf="@+id/redCardPointPlayer2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textYellowCardPointPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ToscaCardPointPlayer2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#60BBBF"
+            app:layout_constraintStart_toEndOf="@+id/YellowCardPointPlayer2"
+            app:layout_constraintTop_toTopOf="@+id/YellowCardPointPlayer2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textToscaCardPointPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/OrangeCardPointPlayer2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#F49E40"
+            app:layout_constraintStart_toStartOf="@+id/redCardPointPlayer2"
+            app:layout_constraintTop_toBottomOf="@+id/redCardPointPlayer2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textGreenCardPointPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PinkCardPointPlayer2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F29575"
+            app:layout_constraintStart_toEndOf="@+id/OrangeCardPointPlayer2"
+            app:layout_constraintTop_toTopOf="@+id/OrangeCardPointPlayer2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOrangeCardPointPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/GreenCardPointPlayer2"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor=" #CDDA48"
+            app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer2"
+            app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer2">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOrangeCardPointPlayer2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="POINT"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer2Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer2Final"
+            app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer2Final" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Player 4"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer4Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer4Final"
+            app:layout_constraintTop_toTopOf="@+id/textView9" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/redCardPointPlayer3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="#F46A40"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer3Final"
+            app:layout_constraintTop_toBottomOf="@+id/textView17">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textRedCardPointPlayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/YellowCardPointPlayer3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F0CA60"
+            app:layout_constraintStart_toEndOf="@+id/redCardPointPlayer3"
+            app:layout_constraintTop_toTopOf="@+id/redCardPointPlayer3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textYellowCardPointPlayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ToscaCardPointPlayer3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#60BBBF"
+            app:layout_constraintStart_toEndOf="@+id/YellowCardPointPlayer3"
+            app:layout_constraintTop_toTopOf="@+id/YellowCardPointPlayer3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textToscaCardPointPlayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/OrangeCardPointPlayer3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#F49E40"
+            app:layout_constraintStart_toStartOf="@+id/redCardPointPlayer3"
+            app:layout_constraintTop_toBottomOf="@+id/redCardPointPlayer3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOrangeCardPointPlayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PinkCardPointPlayer3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F29575"
+            app:layout_constraintStart_toEndOf="@+id/OrangeCardPointPlayer3"
+            app:layout_constraintTop_toTopOf="@+id/OrangeCardPointPlayer3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textPinkCardPointPlayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/GreenCardPointPlayer3"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor=" #CDDA48"
+            app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer3"
+            app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer3">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textGreenCardPointPlayer3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="POINT"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer3Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer3Final"
+            app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer3Final" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/redCardPointPlayer4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="#F46A40"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer4Final"
+            app:layout_constraintTop_toBottomOf="@+id/textView18">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textRedCardPointPlayer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/YellowCardPointPlayer4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F0CA60"
+            app:layout_constraintStart_toEndOf="@+id/redCardPointPlayer4"
+            app:layout_constraintTop_toTopOf="@+id/redCardPointPlayer4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textYellowCardPointPlayer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ToscaCardPointPlayer4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#60BBBF"
+            app:layout_constraintStart_toEndOf="@+id/YellowCardPointPlayer4"
+            app:layout_constraintTop_toTopOf="@+id/YellowCardPointPlayer4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textToscaCardPointPlayer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/OrangeCardPointPlayer4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginTop="8dp"
+            app:cardBackgroundColor="#F49E40"
+            app:layout_constraintStart_toStartOf="@+id/redCardPointPlayer4"
+            app:layout_constraintTop_toBottomOf="@+id/redCardPointPlayer4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textOrangeCardPointPlayer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/PinkCardPointPlayer4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#F29575"
+            app:layout_constraintStart_toEndOf="@+id/OrangeCardPointPlayer4"
+            app:layout_constraintTop_toTopOf="@+id/OrangeCardPointPlayer4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textPinkCardPointPlayer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/GreenCardPointPlayer4"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor=" #CDDA48"
+            app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer4"
+            app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer4">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textGreenCardPointPlayer4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="POINT"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer4Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer4Final"
+            app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer4Final" />
+
+        <Button
+            android:id="@+id/buttonPlayAgain"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="16dp"
+            android:text="PLAY AGAIN"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer4Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer3Final"
+            app:layout_constraintTop_toBottomOf="@+id/PinkCardPointPlayer4" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </ScrollView>
