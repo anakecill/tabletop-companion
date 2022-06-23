@@ -1,5 +1,6 @@
 package com.tabletop.companionapp
 
+import android.content.Intent
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import android.widget.Toast
@@ -35,6 +36,7 @@ class TaskAdapter(val listTask: MutableList<Task>, val playerIndex: Int): Recycl
                         "${GlobalData.players[playerIndex].name} has completed 8 tasks",
                         Toast.LENGTH_SHORT
                     ).show()
+                    itemView.context.startActivity(Intent(itemView.context, FinalScoreActivity::class.java))
                 }
             }
             binding.buttonTrash.setOnClickListener {
