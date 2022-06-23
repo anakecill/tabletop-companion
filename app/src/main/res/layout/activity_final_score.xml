@@ -58,7 +58,7 @@
             android:layout_height="200dp"
             android:layout_marginStart="38dp"
             android:layout_marginTop="8dp"
-            app:cardBackgroundColor=" #CDDA48"
+            app:cardBackgroundColor= "#CDDA48"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/textView13">
 
@@ -250,7 +250,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textOrangeCardPointPlayer1"
+                    android:id="@+id/textPinkCardPointPlayer1"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -266,7 +266,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            app:cardBackgroundColor=" #CDDA48"
+            app:cardBackgroundColor= "#CDDA48"
             app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer1"
             app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer1">
 
@@ -410,7 +410,7 @@
                 android:layout_height="match_parent">
 
                 <TextView
-                    android:id="@+id/textOrangeCardPointPlayer2"
+                    android:id="@+id/textPinkCardPointPlayer2"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="0"
@@ -426,7 +426,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            app:cardBackgroundColor=" #CDDA48"
+            app:cardBackgroundColor= "#CDDA48"
             app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer2"
             app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer2">
 
@@ -595,7 +595,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            app:cardBackgroundColor=" #CDDA48"
+            app:cardBackgroundColor= "#CDDA48"
             app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer3"
             app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer3">
 
@@ -755,7 +755,7 @@
             android:layout_width="30dp"
             android:layout_height="30dp"
             android:layout_marginStart="8dp"
-            app:cardBackgroundColor=" #CDDA48"
+            app:cardBackgroundColor= "#CDDA48"
             app:layout_constraintStart_toEndOf="@+id/PinkCardPointPlayer4"
             app:layout_constraintTop_toTopOf="@+id/PinkCardPointPlayer4">
 

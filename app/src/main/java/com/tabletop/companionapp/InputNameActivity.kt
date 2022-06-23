@@ -3,6 +3,7 @@ package com.tabletop.companionapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import com.tabletop.companionapp.data.GlobalData
 import com.tabletop.companionapp.data.Player
 import com.tabletop.companionapp.databinding.ActivityInputNameBinding
@@ -75,7 +76,9 @@ class InputNameActivity : AppCompatActivity() {
             GlobalData.players.add(Player(player3, GlobalData.characters[character3], task3))
             GlobalData.players.add(Player(player4, GlobalData.characters[character4], task4))
 
-            startActivity(Intent(this, PlayerActionActivity::class.java))
+            Log.d("InputName", GlobalData.players.toString())
+
+            startActivity(Intent(this, RandomCharacterActivity::class.java))
         }
     }
 
