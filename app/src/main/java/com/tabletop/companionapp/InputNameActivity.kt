@@ -80,9 +80,9 @@ class InputNameActivity : AppCompatActivity() {
     }
 
     private fun randomNumber(selectedNumbers: List<Int>?): Int {
-        var number = Random.nextInt(0, 6)
+        var number = Random.nextInt(0, GlobalData.characters.size)
         if (selectedNumbers != null)  {
-            var tempNumber = Random.nextInt(0, 6)
+            var tempNumber = Random.nextInt(0, GlobalData.characters.size)
             var isSame: Boolean = false
             for (num in selectedNumbers) {
                 if (tempNumber == num) {
