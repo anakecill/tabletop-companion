@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RandomCharacterActivity">
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="52dp"
+        android:text="Your Character"
+        android:textSize="34sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCharPlayer1"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#FFBEBE"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamePlayer1" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCharPlayer2"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginStart="16dp"
+        app:cardBackgroundColor="#ECA4F8"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.255"
+        app:layout_constraintStart_toEndOf="@+id/cardCharPlayer1"
+        app:layout_constraintTop_toTopOf="@+id/cardCharPlayer1">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCharPlayer4"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="36dp"
+        app:cardBackgroundColor="#FFEEBB"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewNamePlayer4">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardCharPlayer3"
+        android:layout_width="150dp"
+        android:layout_height="200dp"
+        android:layout_marginEnd="28dp"
+        app:cardBackgroundColor="#A7D8FF"
+        app:layout_constraintEnd_toStartOf="@+id/cardCharPlayer4"
+        app:layout_constraintHorizontal_bias="0.936"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/cardCharPlayer4" >
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+
+    <TextView
+        android:id="@+id/textViewNamePlayer1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Player 1"
+        app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer1"
+        app:layout_constraintHorizontal_bias="0.426"
+        app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textViewNamePlayer2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 2"
+        app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer2"
+        app:layout_constraintStart_toStartOf="@+id/cardCharPlayer2"
+        app:layout_constraintTop_toTopOf="@+id/textViewNamePlayer1" />
+
+    <TextView
+        android:id="@+id/textViewNamePlayer4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="Player 4"
+        app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer4"
+        app:layout_constraintStart_toStartOf="@+id/cardCharPlayer4"
+        app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer2" />
+
+    <TextView
+        android:id="@+id/textViewNamePlayer3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Player 3"
+        app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer3"
+        app:layout_constraintStart_toStartOf="@+id/cardCharPlayer3"
+        app:layout_constraintTop_toTopOf="@+id/textViewNamePlayer4" />
+
+    <Button
+        android:id="@+id/buttonLetsPlay"
+        android:layout_width="155dp"
+        android:layout_height="46dp"
+        android:layout_marginTop="40dp"
+        android:text="Lets Play"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer3" />
+</androidx.constraintlayout.widget.ConstraintLayout>

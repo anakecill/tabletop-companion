@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FinalScoreActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".FinalScoreActivity">
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Pemilihan Juragan Bakso"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="terbaik dimulai!"
+            android:textSize="24sp"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView8" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Silahkan hitung poinmu"
+            app:layout_constraintEnd_toEndOf="@+id/textView8"
+            app:layout_constraintStart_toStartOf="@+id/textView8"
+            app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+        <TextView
+            android:id="@+id/textView13"
+            android:layout_width="56dp"
+            android:layout_height="19dp"
+            android:layout_marginTop="32dp"
+            android:text="Player 1"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer1Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1Final"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCharPlayer1Final"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginStart="38dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView13">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCharPlayer2Final"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintTop_toTopOf="@+id/cardCharPlayer1Final"
+            tools:layout_editor_absoluteX="223dp">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCharPlayer3Final"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="16dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1Final"
+            app:layout_constraintTop_toBottomOf="@+id/redCardPointPlayer1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardCharPlayer4Final"
+            android:layout_width="150dp"
+            android:layout_height="200dp"
+            android:layout_marginTop="24dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer2Final"
+            app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer2Final">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Player 2"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer2Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer2Final"
+            app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="POINT"
+            app:layout_constraintEnd_toEndOf="@+id/cardCharPlayer1Final"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1Final"
+            app:layout_constraintTop_toBottomOf="@+id/cardCharPlayer1Final" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/redCardPointPlayer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="20dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintStart_toStartOf="@+id/cardCharPlayer1Final"
+            app:layout_constraintTop_toBottomOf="@+id/textView15">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textRedCardPointPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/YellowCardPointPlayer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintStart_toEndOf="@+id/redCardPointPlayer1"
+            app:layout_constraintTop_toTopOf="@+id/redCardPointPlayer1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textYellowCardPointPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/ToscaCardPointPlayer1"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="8dp"
+            app:cardBackgroundColor="#FFBEBE"
+            app:layout_constraintStart_toEndOf="@+id/YellowCardPointPlayer1"
+            app:layout_constraintTop_toTopOf="@+id/YellowCardPointPlayer1">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:id="@+id/textToscaCardPointPlayer1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="0"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>
