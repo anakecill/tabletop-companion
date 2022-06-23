@@ -22,11 +22,11 @@ class PlayerActionActivity : AppCompatActivity() {
         showRecyclerView(playerIndex)
     }
 
-    private fun showRecyclerView(player: Int) {
+    fun showRecyclerView(player: Int) {
         binding.rvTask.adapter = TaskAdapter(GlobalData.players[player].tasks, playerIndex)
     }
 
-    public fun showScore(player: Int) {
+    fun showScore(player: Int) {
         binding.textGreenCardPoint.text = GlobalData.players[player].point.greenPoint.toString()
         binding.textRedCardPoint.text = GlobalData.players[player].point.redPoint.toString()
         binding.textYellowCardPoint.text = GlobalData.players[player].point.yellowPoint.toString()
