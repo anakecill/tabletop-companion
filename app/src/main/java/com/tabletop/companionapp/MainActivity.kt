@@ -3,6 +3,7 @@ package com.tabletop.companionapp
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import com.tabletop.companionapp.data.GlobalData
 import com.tabletop.companionapp.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -16,6 +17,7 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this ,InputNameActivity::class.java))
         }
 
+        GlobalData.players.clear()
         binding.buttonExit.setOnClickListener { finish() }
     }
 }

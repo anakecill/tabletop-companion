@@ -5,5 +5,6 @@ data class Player(
     val character: String,
     val tasks: MutableList<Task>,
     val point: Point = Point(),
-    val level: Int = 1
+    var level: Int = 1,
+    var taskCompleted: Int = 0
 )
