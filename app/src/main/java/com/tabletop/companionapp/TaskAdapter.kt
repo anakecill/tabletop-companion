@@ -58,10 +58,18 @@ class TaskAdapter(val listTask: MutableList<Task>, val playerIndex: Int): Recycl
                 }
             }
             binding.buttonTrash.setOnClickListener {
-                Toast.makeText(itemView.context, "${task.name} trashed", Toast.LENGTH_SHORT).show()
-                val tmpTask = GlobalData.allTasks[Random.nextInt(0,GlobalData.allTasks.size)]
-                GlobalData.players[playerIndex].tasks[position] = tmpTask
-                (itemView.context as PlayerActionActivity).showRecyclerView(playerIndex)
+                AlertDialog.Builder(itemView.context).apply {
+                    setTitle("KONFIRMASI")
+                    setMessage("Apakah Anda yakin menghapus pesanan ${task.name}?")
+                    setPositiveButton("HAPUS", DialogInterface.OnClickListener { _, _ ->
+                        Toast.makeText(itemView.context, "${task.name} trashed", Toast.LENGTH_SHORT).show()
+                        val tmpTask = GlobalData.allTasks[Random.nextInt(0,GlobalData.allTasks.size)]
+                        GlobalData.players[playerIndex].tasks[position] = tmpTask
+                        (itemView.context as PlayerActionActivity).showRecyclerView(playerIndex)
+                    })
+                    setNegativeButton("Batal", null)
+                    create().show()
+                }
             }
         }
     }
