@@ -56,7 +56,7 @@ class FinalScoreActivity : AppCompatActivity() {
         binding.imageViewPlayer4Final.setImageResource(GlobalData.showImage(player4.character))
 
         binding.buttonPlayAgain.setOnClickListener{
-            startActivity(Intent(this, MainActivity::class.java))
+            finish()
         }
     }
 }

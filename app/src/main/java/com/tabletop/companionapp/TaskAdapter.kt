@@ -51,6 +51,7 @@ class TaskAdapter(val listTask: MutableList<Task>, val playerIndex: Int): Recycl
                                 Toast.LENGTH_SHORT
                             ).show()
                             itemView.context.startActivity(Intent(itemView.context, FinalScoreActivity::class.java))
+                            (itemView.context as PlayerActionActivity).finish()
                         }
                     })
                     setNegativeButton("Tidak", null)

@@ -27,6 +27,7 @@ class RandomCharacterActivity : AppCompatActivity() {
 
         binding.buttonLetsPlay.setOnClickListener {
             startActivity(Intent(this, PlayerActionActivity::class.java))
+            finish()
         }
     }
 }

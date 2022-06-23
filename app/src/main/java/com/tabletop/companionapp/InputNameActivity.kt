@@ -79,6 +79,7 @@ class InputNameActivity : AppCompatActivity() {
             Log.d("InputName", GlobalData.players.toString())
 
             startActivity(Intent(this, RandomCharacterActivity::class.java))
+            finish()
         }
     }
 

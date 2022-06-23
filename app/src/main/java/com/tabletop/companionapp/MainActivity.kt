@@ -20,4 +20,9 @@ class MainActivity : AppCompatActivity() {
         GlobalData.players.clear()
         binding.buttonExit.setOnClickListener { finish() }
     }
+
+    override fun onResume() {
+        super.onResume()
+        GlobalData.players.clear()
+    }
 }
