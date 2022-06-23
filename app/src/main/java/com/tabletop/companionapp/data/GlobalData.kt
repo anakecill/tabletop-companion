@@ -29,4 +29,6 @@ object GlobalData {
         Task("Bakso Setan", 4, 55000, "Orange"),
         Task("Bakso Iblis", 5, 60000, "Orange"),
     )
+
+    val players = mutableListOf<Player>()
 }
