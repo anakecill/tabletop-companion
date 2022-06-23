@@ -20,6 +20,11 @@ class RandomCharacterActivity : AppCompatActivity() {
         binding.textViewNamePlayer3.text = GlobalData.players[2].name
         binding.textViewNamePlayer4.text = GlobalData.players[3].name
 
+        binding.imageViewPlayer1.setImageResource(GlobalData.showImage(GlobalData.players[0].character))
+        binding.imageViewPlayer2.setImageResource(GlobalData.showImage(GlobalData.players[1].character))
+        binding.imageViewPlayer3.setImageResource(GlobalData.showImage(GlobalData.players[2].character))
+        binding.imageViewPlayer4.setImageResource(GlobalData.showImage(GlobalData.players[3].character))
+
         binding.buttonLetsPlay.setOnClickListener {
             startActivity(Intent(this, PlayerActionActivity::class.java))
         }

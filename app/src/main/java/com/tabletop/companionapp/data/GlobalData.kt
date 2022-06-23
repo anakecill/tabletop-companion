@@ -33,4 +33,16 @@ object GlobalData {
     )
 
     val players = mutableListOf<Player>()
+    fun showImage(char: String):Int{
+        var img = 0
+        when(char){
+            "Dendi" -> img = R.drawable.bakso_campur
+            "Ciko" -> img = R.drawable.bakso_mie
+            "Siput" -> img = R.drawable.bakso_iblis
+            "Jopi" -> img = R.drawable.bakso_telur
+            "Asep" -> img = R.drawable.bakso_biasa
+            "Emil" -> img = R.drawable.bakso_ikan
+        }
+        return img
+    }
 }

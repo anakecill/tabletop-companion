@@ -1,5 +1,7 @@
 package com.tabletop.companionapp
 
+import android.app.AlertDialog
+import android.content.DialogInterface
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.Toast
@@ -7,11 +9,12 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.tabletop.companionapp.data.GlobalData
 import com.tabletop.companionapp.data.Task
 import com.tabletop.companionapp.databinding.ActivityPlayerActionBinding
+import kotlin.random.Random
 
 class PlayerActionActivity : AppCompatActivity() {
 
     private lateinit var binding: ActivityPlayerActionBinding
-    var playerIndex = 1
+    var playerIndex = 0
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityPlayerActionBinding.inflate(layoutInflater)
@@ -35,14 +38,22 @@ class PlayerActionActivity : AppCompatActivity() {
         }
 
         binding.btnNextPlayer.setOnClickListener {
-            if (playerIndex + 1 >= 4) {
-                playerIndex = 0
-            } else {
-                playerIndex += 1
+            AlertDialog.Builder(this).apply {
+                setTitle("KONFIRMASI")
+                setMessage("Apakah Anda yakin ingin mengakhiri giliran?")
+                setPositiveButton("Ya", DialogInterface.OnClickListener { _, _ ->
+                    if (playerIndex + 1 >= 4) {
+                        playerIndex = 0
+                    } else {
+                        playerIndex += 1
+                    }
+                    binding.tvNameAction.text = GlobalData.players[playerIndex].name
+                    showRecyclerView(playerIndex)
+                    showScore(playerIndex)
+                })
+                setNegativeButton("Tidak", null)
+                create().show()
             }
-            binding.tvNameAction.text = GlobalData.players[playerIndex].name
-            showRecyclerView(playerIndex)
-            showScore(playerIndex)
         }
     }
 
