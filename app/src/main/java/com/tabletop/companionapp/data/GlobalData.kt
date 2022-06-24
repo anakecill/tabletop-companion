@@ -36,12 +36,12 @@ object GlobalData {
     fun showImage(char: String):Int{
         var img = 0
         when(char){
-            "Dendi" -> img = R.drawable.bakso_campur
-            "Ciko" -> img = R.drawable.bakso_mie
-            "Siput" -> img = R.drawable.bakso_iblis
-            "Jopi" -> img = R.drawable.bakso_telur
-            "Asep" -> img = R.drawable.bakso_biasa
-            "Emil" -> img = R.drawable.bakso_ikan
+            "Dendi" -> img = R.drawable.kang_dendi
+            "Ciko" -> img = R.drawable.kang_ciko
+            "Siput" -> img = R.drawable.kang_siput
+            "Jopi" -> img = R.drawable.kang_jopi
+            "Asep" -> img = R.drawable.kang_asep
+            "Emil" -> img = R.drawable.kang_emil
         }
         return img
     }
